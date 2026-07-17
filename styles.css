@@ -68,7 +68,7 @@ a:focus-visible,
 .page {
   width: min(100%, var(--max));
   margin: 0 auto;
-  padding: calc(var(--space) * 1.5) var(--space) calc(var(--space) * 2);
+  padding: calc(var(--space) * 1.5) var(--space) 1rem;
 }
 
 .landing {
@@ -134,7 +134,7 @@ a:focus-visible,
 }
 
 .btn-back {
-  margin-top: calc(var(--space) * 2);
+  margin-top: var(--space);
   width: 100%;
 }
 
@@ -189,7 +189,7 @@ p {
 }
 
 .fine {
-  margin-top: 2rem;
+  margin-top: var(--space);
   text-align: center;
   font-weight: 700;
 }
@@ -222,6 +222,10 @@ p {
 
 .sponsor-block {
   margin-bottom: 2rem;
+}
+
+.sponsor-block:last-of-type {
+  margin-bottom: 0;
 }
 
 .sponsor-block h2 {
@@ -259,7 +263,7 @@ p {
 
 @media (min-width: 40rem) {
   .page {
-    padding-block: 2.5rem;
+    padding-block: 2.5rem 1rem;
   }
 }
 
